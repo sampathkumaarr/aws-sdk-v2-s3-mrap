@@ -2,14 +2,14 @@ provider "aws" {
   alias                    = "london"
   profile                  = "default"
   region                   = "eu-west-2"
-  shared_credentials_files = ["C:\\Users\\selva\\.aws\\credentials"]
+  shared_credentials_files = ["C:\\Users\\techie\\.aws\\credentials"]
 }
 
 provider "aws" {
   alias                    = "ireland"
   profile                  = "default"
   region                   = "eu-west-1"
-  shared_credentials_files = ["C:\\Users\\selva\\.aws\\credentials"]
+  shared_credentials_files = ["C:\\Users\\techie\\.aws\\credentials"]
 }
 
 resource "aws_iam_role" "replication" {
