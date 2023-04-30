@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.aws.client'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'software.amazon.awssdk:bom:2.20.51'
+    implementation 'software.amazon.awssdk:s3:2.20.51'
+    implementation 'software.amazon.awssdk:sts:2.20.51'
+    implementation 'software.amazon.awssdk:auth-crt:2.20.51'
+}
+
+test {
+    useJUnitPlatform()
+}
